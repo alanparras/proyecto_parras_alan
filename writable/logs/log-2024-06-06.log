@@ -1,0 +1,1028 @@
+INFO - 2024-06-06 00:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:04:50 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3, [...])
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:04:52 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3, [...])
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 00:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:04:58 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3, [...])
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:05:09 --> Undefined variable: num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 50.
+ 1 APPPATH\Views\front\plantilla\layout.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:05:17 --> Undefined variable: num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 50.
+ 1 APPPATH\Views\front\plantilla\layout.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/home', [], true)
+ 6 APPPATH\Controllers\Home.php(10): view('front/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 00:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:06:17 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3, [...])
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:08:14 --> Undefined variable: num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:09:05 --> Undefined variable: num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:09:06 --> Undefined variable: num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:09:06 --> Undefined variable: num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:09:07 --> Undefined variable: num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:09:28 --> Undefined variable: num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:09:29 --> Undefined variable: num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:10:00 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3, [...])
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:11:08 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3, [...])
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:11:09 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3, [...])
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:11:09 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3, [...])
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:11:10 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3, [...])
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:11:10 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3, [...])
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:11:10 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3, [...])
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:11:10 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3, [...])
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:11:10 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3, [...])
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 00:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 00:11:22 --> Class 'Database' not found
+in APPPATH\Views\front\catalogue.php on line 16.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 4 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:08:40 --> Class "Database" not found
+in APPPATH\Views\front\details.php on line 17.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/details', [], true)
+ 4 APPPATH\Controllers\Details.php(10): view('front/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Details->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Details))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:09:25 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/details', [], true)
+ 8 APPPATH\Controllers\Details.php(10): view('front/details', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Details->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Details))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:09:26 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/details', [], true)
+ 8 APPPATH\Controllers\Details.php(10): view('front/details', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Details->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Details))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:09:50 --> Class "Database" not found
+in APPPATH\Views\front\catalogue.php on line 16.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 4 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:10:03 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:10:11 --> Undefined variable $num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:10:58 --> session_start(): Ignoring session_start() because a session is already active
+in FCPATH\assets\config\config.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active', 'FCPATH\\assets\\config\\config.php', 6)
+ 2 FCPATH\assets\config\config.php(6): session_start()
+ 3 APPPATH\Views\front\catalogue.php(16): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\catalogue.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 7 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:11:00 --> session_start(): Ignoring session_start() because a session is already active
+in FCPATH\assets\config\config.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active', 'FCPATH\\assets\\config\\config.php', 6)
+ 2 FCPATH\assets\config\config.php(6): session_start()
+ 3 APPPATH\Views\front\catalogue.php(16): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\catalogue.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 7 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:11:12 --> Undefined variable $num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:12:05 --> Undefined variable $num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/details', [], true)
+ 6 APPPATH\Controllers\Details.php(10): view('front/details', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Details->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Details))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:12:16 --> session_start(): Ignoring session_start() because a session is already active
+in FCPATH\assets\config\config.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active', 'FCPATH\\assets\\config\\config.php', 6)
+ 2 FCPATH\assets\config\config.php(6): session_start()
+ 3 APPPATH\Views\front\details.php(16): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\details.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/details', [], true)
+ 7 APPPATH\Controllers\Details.php(10): view('front/details', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Details->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Details))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:21:09 --> Undefined variable $num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/details', [], true)
+ 6 APPPATH\Controllers\Details.php(10): view('front/details', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Details->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Details))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:21:25 --> Undefined variable $num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:21:26 --> Undefined variable $num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/home', [], true)
+ 6 APPPATH\Controllers\Home.php(10): view('front/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 01:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 01:21:27 --> Undefined variable $num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 48.
+ 1 APPPATH\Views\front\plantilla\layout.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/home', [], true)
+ 6 APPPATH\Controllers\Home.php(10): view('front/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:21:04 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:21:59 --> Undefined constant "KEY_TOKEN"
+in APPPATH\Views\front\catalogue.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 4 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:22:28 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:22:41 --> Undefined variable $num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 51.
+ 1 APPPATH\Views\front\plantilla\layout.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:22:55 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:24:16 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:24:17 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:24:17 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:24:17 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:24:18 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:24:18 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:24:18 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:24:18 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:24:39 --> Undefined constant "KEY_TOKEN"
+in APPPATH\Views\front\catalogue.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 4 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:24:50 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:26:21 --> Undefined variable $num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 51.
+ 1 APPPATH\Views\front\plantilla\layout.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:27:03 --> Undefined variable $num_cart
+in APPPATH\Views\front\plantilla\layout.php on line 51.
+ 1 APPPATH\Views\front\plantilla\layout.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $num_cart', 'APPPATH\\Views\\front\\plantilla\\layout.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 6 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:27:19 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(51): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:27:43 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:27:46 --> Undefined constant "KEY_TOKEN"
+in APPPATH\Views\front\catalogue.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 4 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:28:19 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:29:22 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:29:28 --> Constant KEY_TOKEN already defined
+in FCPATH\assets\config\config.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant KEY_TOKEN already defined', 'FCPATH\\assets\\config\\config.php', 3)
+ 2 FCPATH\assets\config\config.php(3): define('KEY_TOKEN', 'ABC.def-ghi_123*')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:32:47 --> Constant MONEDA already defined
+in FCPATH\assets\config\config.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant MONEDA already defined', 'FCPATH\\assets\\config\\config.php', 5)
+ 2 FCPATH\assets\config\config.php(5): define('MONEDA', '$')
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:52:41 --> session_start(): Ignoring session_start() because a session is already active
+in FCPATH\assets\config\config.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active', 'FCPATH\\assets\\config\\config.php', 8)
+ 2 FCPATH\assets\config\config.php(8): session_start()
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:52:49 --> session_start(): Ignoring session_start() because a session is already active
+in FCPATH\assets\config\config.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active', 'FCPATH\\assets\\config\\config.php', 8)
+ 2 FCPATH\assets\config\config.php(8): session_start()
+ 3 APPPATH\Views\front\catalogue.php(16): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\catalogue.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 7 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:53:04 --> session_start(): Ignoring session_start() because a session is already active
+in FCPATH\assets\config\config.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active', 'FCPATH\\assets\\config\\config.php', 8)
+ 2 FCPATH\assets\config\config.php(8): session_start()
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:54:25 --> session_start(): Ignoring session_start() because a session is already active
+in FCPATH\assets\config\config.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active', 'FCPATH\\assets\\config\\config.php', 8)
+ 2 FCPATH\assets\config\config.php(8): session_start()
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 19:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 19:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 20:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 20:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 20:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:03:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 21:29:45 --> session_start(): Ignoring session_start() because a session is already active
+in FCPATH\assets\config\config.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active', 'FCPATH\\assets\\config\\config.php', 8)
+ 2 FCPATH\assets\config\config.php(8): session_start()
+ 3 APPPATH\Views\front\plantilla\layout.php(2): require('FCPATH\\assets\\config\\config.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\plantilla\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('front/plantilla/layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front/catalogue', [], true)
+ 8 APPPATH\Controllers\Catalogue.php(10): view('front/catalogue', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalogue->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 21:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 21:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

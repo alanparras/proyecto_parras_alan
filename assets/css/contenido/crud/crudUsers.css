@@ -1,0 +1,44 @@
+html body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
+}
+body h1, body h2, body p{
+    margin: 0;
+    padding: 0;
+}
+
+.sectionLogin{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: #553d2a;
+    position: relative;
+    z-index: 10;
+}
+.divBoxForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    max-width: 1500px;
+    background-color: #e3d7bf;
+    border-left: 7px solid #ab9680;
+    border-right: 7px solid #ab9680;
+    box-shadow: 0px 0px 30px 5px #17100b;
+    padding: 100px 0;
+}
+
+h2.tituloBox{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+table.table{
+    max-width: 1200px;
+}
+
+a.btn.btn-success{
+    margin-bottom: 20px;
+}
