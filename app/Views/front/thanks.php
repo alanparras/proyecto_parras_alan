@@ -4,7 +4,7 @@
 // ----- CARGAR DE ESTILOS PROPIOS -----
 echo $this->section('estilosIndividuales'); ?>
 
-<link href="assets\css\contenido\carrito.css" rel="stylesheet">
+    <link href="<?= base_url('assets/css/contenido/carrito.css') ?>" rel="stylesheet">
 
 <?php echo $this->endSection();
 
@@ -17,7 +17,10 @@ echo $this->section('contenido'); ?>
         <div class="mensajeCarritoVacio">
             <h2 class="tituloBox">Gracias por su compra!</h2>
             <p class="pCarrito">Explora mas productos y encuentra tus proximas zapatillas favoritas.</p>
-            <a href="<?= base_url() ?>" class="botonCompra">Volver</a>
+            <div>
+                <a href="<?= base_url('invoice/' . $idVenta) ?>" class="botonCompra">Ver factura</a>
+                <a href="<?= base_url() ?>" class="botonCompra">Volver</a>
+            </div>
         </div>
     </div>
 </section>

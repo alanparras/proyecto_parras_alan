@@ -31,4 +31,12 @@ class VentaModel extends Model{
                     ->get()
                     ->getResultArray();
     }
+
+    public function getVentaConUsuario($idVenta)
+    {
+        return $this->select('ventas.*, users.nombre, users.apellido, users.dni, users.email')
+                    ->join('users', 'users.id_user = ventas.id_user')
+                    ->where('ventas.id_venta', $idVenta)
+                    ->first();
+    }
 }

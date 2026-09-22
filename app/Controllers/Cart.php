@@ -184,7 +184,7 @@ class Cart extends BaseController
 
         $cart->destroy();
 
-        return redirect()->to('thanks');
+        return redirect()->to('thanks/' . $idVenta);
     }
     public function destroy()
     {

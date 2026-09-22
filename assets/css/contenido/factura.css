@@ -1,0 +1,120 @@
+html body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
+}
+body h1, body h2, body h3, body h4, body p{
+    margin: 0;
+    padding: 0;
+}
+
+
+.sectionLogin{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: #553d2a;
+    position: relative;
+    z-index: 10;
+}
+.divBoxForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    max-width: 1500px;
+    background-color: #e3d7bf;
+    border-left: 7px solid #ab9680;
+    border-right: 7px solid #ab9680;
+    box-shadow: 0px 0px 30px 5px #17100b;
+    padding: 100px 0;
+}
+
+.boxFactura{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    max-width: 800px;
+    background-color: #fff9e1;
+    border-radius: 10px;
+    box-shadow: -2px 2px 6px #2e251f33;
+    padding: 40px;
+}
+
+.encabezadoFactura{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #e3d7bf;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.encabezadoFactura h2{
+    color: #553d2a;
+    margin: 0;
+}
+.encabezadoFactura p{
+    color: #7e634e;
+}
+.datosFacturaNro{
+    text-align: right;
+}
+
+.datosCliente p{
+    margin-bottom: 5px;
+}
+
+.tablaFactura{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tablaFactura th{
+    background-color: #735945;
+    color: #fff9e1;
+    text-align: left;
+    padding: 10px;
+}
+.tablaFactura td{
+    padding: 10px;
+    border-bottom: 1px solid #e3d7bf;
+}
+
+.totalFactura{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    color: #553d2a;
+    border-top: 2px solid #e3d7bf;
+    padding-top: 15px;
+}
+
+.accionesFactura{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #e3d7bf;
+    a{
+        text-decoration: none;
+    }
+}
+
+.botonCompra--secundario{
+    /* background-color: #ab9680; */
+    /* font-weight: bold; */
+    color: #9e907e;
+}
+.botonCompra--secundario:hover{
+    /* background-color: #907761; */
+    color: #675143;
+}
+
+.avisoFactura{
+    text-align: center;
+    font-size: 12px;
+    color: #7e634e;
+    opacity: 70%;
+}

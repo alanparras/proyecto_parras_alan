@@ -4,7 +4,7 @@
 // ----- CARGAR DE ESTILOS PROPIOS -----
 echo $this->section('estilosIndividuales'); ?>
 
-<link href="assets\css\contenido\carrito.css" rel="stylesheet">
+    <link href="assets\css\contenido\carrito.css" rel="stylesheet">
 
 <?php echo $this->endSection();
 

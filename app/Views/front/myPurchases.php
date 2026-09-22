@@ -36,6 +36,7 @@ echo $this->section('contenido'); ?>
                                     <p class="fechaCompra"><?= esc($venta['created_at']) ?></p>
                                 </div>
                                 <!-- <span class="estadoCompra">Entregado</span> -->
+                                 <a href="<?= base_url('invoice/' . $venta['id_venta']) ?>" class="linkVerFactura">Ver factura</a>
                             </div>
 
                             <div class="cuerpoCompra">

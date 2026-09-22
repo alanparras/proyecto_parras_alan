@@ -41,7 +41,9 @@ $routes->post('/contact', 'Contact::send');
 
 $routes->get('/termsAndUses', 'Terms_And_Uses::index');
 $routes->get('/myPurchases', 'My_Purchases::index', ['filter' => 'auth']);
+
 $routes->get('/thanks', 'Thanks::index');
+$routes->get('/thanks/(:num)', 'Thanks::index/$1');
 
 // -------- CRUD USUARIOS --------
 $routes->get('/crudUsers', 'CrudUsers::index', ['filter' => 'auth']);
@@ -103,6 +105,10 @@ $routes->get('/remove/(:segment)', 'Cart::remove/$1');
 $routes->post('/update', 'Cart::update');
 $routes->get('/destroy', 'Cart::destroy');
 $routes->get('/buy', 'Cart::buy', ['filter' => 'auth']);
+
+// -------- Factura --------
+$routes->get('invoice/(:num)', 'InvoiceController::show/$1');
+$routes->get('invoice/(:num)/download', 'InvoiceController::download/$1');
 
 /*
  * --------------------------------------------------------------------
