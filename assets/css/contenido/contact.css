@@ -1,0 +1,146 @@
+body h1, body h2, body p{
+    margin: 0;
+    padding: 0;
+}
+
+.sectionContact{
+    display: flex;
+    justify-content: center;
+    background-color: #553d2a;
+}
+.divBoxContenido{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    max-width: 1100px;
+    background-color: #e3d7bf;
+    border-left: 7px solid #ab9680;
+    border-right: 7px solid #ab9680;
+    box-shadow: 0px 0px 30px 5px #17100b;
+    position: relative;
+    z-index: 10;
+    padding: 0 30px;
+}
+.divBoxes{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tituloBox{
+    margin-bottom: 15px;
+}
+.textoContacto p{
+    margin: 10px 0;
+}
+
+.divBoxes--mapaYFormulario{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    border: 7px solid #ab9680;
+    border-radius: 15px;
+}
+
+.divContenedorMapaLocal {
+    display: flex;
+    flex: 1 450px;
+    position: relative;
+    /* max-width: 550px; */
+    border-radius: 7px 0 0 7px;
+}
+
+.mapa-sombraInterna {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 30px #000;
+    border-radius: inherit;
+    pointer-events: none; /* permite interactuar con el iframe debajo */
+    z-index: 1; /* asegura que esté encima del iframe */
+}
+
+.divContenedorMapaLocal iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: inherit;
+    position: relative;
+    z-index: 0; /* asegura que el iframe esté detrás del elemento de sombra */
+}
+
+.divContenedorForm{
+    display: flex;
+    flex: 1 350px;
+    /* max-width: 550px; */
+}
+.formContacto{
+    /* display: flex; */
+    /* flex-direction: column; */
+    flex: 1;
+    background-color: #ab9680;
+    padding: 20px;
+    /* border-left: 7px solid #ab9680; */
+    /* border-radius: 0 7px 7px 0; */
+}
+.formContacto h3{
+    text-align: center;
+    color: #fff9e1;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.saludoUsuario{
+    text-align: center;
+    color: #493323;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.form_input{
+    padding: 6px;
+}
+
+input, textarea{
+    width: 100%;
+    background-color: #fff9e1;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: inset 0 0 7px 1px #493323;
+    outline: none;
+}
+textarea{
+    min-height: 220px;
+}
+.botonEnviar {
+    text-align: center;
+    color: #fff9e1;
+    background-color: #5c493c;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: -2px 2px 4px #2e251f;
+  }
+
+@media screen and (max-width: 880px){
+    .divContenedorMapaLocal {
+        border-radius: 7px 7px 0 0px;
+        height: 400px;
+    }
+    /* .formContacto{
+        border: 0;
+        border-top: 7px solid #ab9680;
+        border-radius: 0 0 7px 7px;
+    } */
+}

@@ -1,0 +1,16 @@
+Agregar un "gracias por la compra"
+Ver factura
+Ver compras
+Agregar y modificar usuarios, y también productos
+Precio no negativo
+Stock no negstivo
+Mensaje que no hay stock
+Que el admin no se pueda desactivar
+Modificar producto
+Diferenciar consultas
+Si es cliente o no
+Mejorar vista de ventas
+Que te muestre solo la venta y que al hacer click te mande a una vista con el detalle de la venta
+Agregar factura
+Filtrar bien las rutas, crud de marcas
+Cliente: mis compras

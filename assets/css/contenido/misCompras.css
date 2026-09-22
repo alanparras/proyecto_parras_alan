@@ -1,0 +1,287 @@
+html body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
+}
+body h1, body h2, body h3, body h4, body p{
+    margin: 0;
+    padding: 0;
+}
+.sectionLogin{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: #553d2a;
+    position: relative;
+    z-index: 10;
+}
+.divBoxForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    max-width: 1500px;
+    background-color: #e3d7bf;
+    border-left: 7px solid #ab9680;
+    border-right: 7px solid #ab9680;
+    box-shadow: 0px 0px 30px 5px #17100b;
+    padding: 100px 0;
+}
+
+.mensajeCarritoVacio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pCarrito{
+    margin-bottom: 20px;
+}
+
+.botonCompra{
+    text-align: center;
+    color: #fff9e1;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-radius: 7px;
+    background-color: #745c4a;
+    box-shadow: -2px 2px 4px #2e251f;
+}
+.botonCompra:hover{
+    background-color: #594839;
+}
+
+.botonCompra-vaciar{
+    background-color: #af2121;
+}
+.botonCompra-vaciar:hover{
+    background-color: #951f1f;
+}
+
+.boxContenidoCarrito{
+    display: flex;
+    flex: 1;
+    max-width: 1200px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.divBoxProductos{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex: 1 450px;
+    max-width: 600px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+.divProducto{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #cec3ad;
+}
+
+.totalCompra{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    flex: 1 270px;
+    gap: 20px;
+    padding: 0 20px;
+}
+.precioTotal{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    opacity: 60%;
+}
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.precioTotal-totalCompra{
+    border-top: 2px solid #cec3ad;
+    border-bottom: 2px solid #cec3ad;
+    padding: 15px 0;
+    flex-direction: row;
+    margin-bottom: 20px;
+    font-weight: bold;
+    opacity: 100%;
+}
+
+
+.divImgProducto{
+    max-width: 150px;
+}
+.imgProducto{
+    width: 100%;
+}
+
+.divDetalleProducto{
+    display: flex;
+    flex: 1;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.contenedorDetalle{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.boxTituloProducto{
+    text-align: start;
+}
+.linkRemove{
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.precioProducto{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+/* -------------------------- LISTADO MIS COMPRAS -------------------------- */
+
+.boxMisCompras{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 900px;
+    gap: 30px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.tarjetaCompra{
+    background-color: #fff9e1;
+    border: 1px solid #c7b69f;
+    border-radius: 10px;
+    box-shadow: -2px 2px 6px #2e251f33;
+    overflow: hidden;
+}
+
+.encabezadoCompra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #735945;
+    color: #fff9e1;
+    padding: 14px 20px;
+}
+
+.encabezadoCompra .idCompra{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.encabezadoCompra .fechaCompra{
+    font-size: 14px;
+    opacity: 85%;
+}
+
+.estadoCompra{
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background-color: #ab9680;
+    color: #251d18;
+}
+
+.cuerpoCompra{
+    display: flex;
+    flex-direction: column;
+}
+
+.itemCompra{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e3d7bf;
+}
+.itemCompra:last-child{
+    border-bottom: none;
+}
+
+.divImgItemCompra{
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #e3d7bf;
+    background-color: #fff;
+}
+.imgItemCompra{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detalleItemCompra{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nombreItemCompra{
+    font-size: 16px;
+    color: #251d18;
+}
+
+.cantidadItemCompra{
+    font-size: 14px;
+    color: #7e634e;
+}
+
+.precioItemCompra{
+    font-weight: bold;
+    color: #553d2a;
+    white-space: nowrap;
+}
+
+.pieCompra{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    background-color: #e3d7bf;
+    font-size: 17px;
+}
+.pieCompra .totalCompraLabel{
+    color: #7e634e;
+}
+.pieCompra .totalCompraMonto{
+    font-weight: bold;
+    color: #553d2a;
+    font-size: 20px;
+}
+
+.mensajeSinCompras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #7e634e;
+    padding: 40px 0;
+}
