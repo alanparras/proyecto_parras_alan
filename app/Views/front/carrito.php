@@ -17,7 +17,9 @@ echo $this->section('contenido'); ?>
         <?php if (empty($carrito->contents())) : ?>
             <div class="mensajeCarritoVacio">
                 <h2 class="tituloBox">El carrito está vacío</h2>
-                <p class="pCarrito">Explora nuestro catálogo y encuentra tus proximas zapatillas favoritas.</p>
+                <p class="pCarrito">
+                    <?= session()->getFlashdata('carritoVacio') ?? 'Explora nuestro catálogo y encuentra tus proximas zapatillas favoritas.' ?>
+                </p>
                 <a href="<?= base_url('catalogue') ?>" class="botonCompra">Ver catálogo</a>
             </div>
         <?php else : ?>

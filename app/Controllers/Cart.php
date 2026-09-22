@@ -16,6 +16,10 @@ class Cart extends BaseController
 
     public function index()
     {
+        // Evita que el navegador muestre una versión cacheada del carrito
+        $this->response->setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
+        $this->response->setHeader('Pragma', 'no-cache');
+
         $data = ['titulo' => 'Prime Shoes | Carrito'];
 
         $cart = \Config\Services::Cart();
@@ -156,6 +160,12 @@ class Cart extends BaseController
     {
         $cart = \Config\Services::Cart();
         $productos = $cart->contents();
+
+        // Si no hay nada en el carrito, no se genera ninguna venta
+        if (empty($productos)) {
+            session()->setFlashdata('carritoVacio', 'Tu carrito está vacío.');
+            return redirect()->to('carrito');
+        }
 
         $ventaModel = new VentaModel();
         $ventaDetalleModel = new VentaDetalleModel();
