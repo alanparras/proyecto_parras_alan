@@ -6,7 +6,7 @@ echo $this->extend('front/plantilla/layout');
 // ----- CARGAR DE ESTILOS PROPIOS -----
 echo $this->section('estilosIndividuales'); ?>
 
-<link href="assets\css\contenido\crud\crudUsers.css" rel="stylesheet">
+    <link href="assets\css\contenido\crud\crudUsers.css" rel="stylesheet">
 
 <?php echo $this->endSection();
 
@@ -63,7 +63,7 @@ echo $this->section('contenido'); ?>
                                 <input type="hidden" name="_method" value="put">
                                 <input type="hidden" name="user_id" value="<?= $producto['id_producto']; ?>">
                             </form> -->
-                            <!-- <a href="<?= base_url('editUser/' . $producto['id_producto']) ?>" class="btn btn-warning btn-sm me-2">Editar</a> -->
+                            <a href="<?= base_url('editProducto/' . $producto['id_producto']) ?>" class="btn btn-warning btn-sm me-2">Editar</a>
                             <a href="<?= $producto['activo'] ? base_url('bajaProducto/' . $producto['id_producto']) : base_url('altaProducto/' . $producto['id_producto']) ?>" class="btn <?= $producto['activo'] ? 'btn-danger' : 'btn-success'; ?> btn-sm"><?= $producto['activo'] ? 'Desactivar' : 'Activar'; ?></a>
                         </td>
                     </tr>

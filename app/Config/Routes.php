@@ -48,12 +48,12 @@ $routes->get('/thanks/(:num)', 'Thanks::index/$1');
 // -------- CRUD USUARIOS --------
 $routes->get('/crudUsers', 'CrudUsers::index', ['filter' => 'auth']);
 
-// $routes->get('/addUser', 'CrudUsers::new', ['filter' => 'auth']);
-// $routes->post('/addUser', 'CrudUsers::create', ['filter' => 'auth']);
+$routes->get('/addUser', 'CrudUsers::new', ['filter' => 'auth']);
+$routes->post('/addUser', 'CrudUsers::create', ['filter' => 'auth']);
 
-// $routes->get('/editUser/(:segment)', 'CrudUsers::edit/$1', ['filter' => 'auth']);
-// $routes->put('/editUser/(:segment)', 'CrudUsers::update/$1', ['filter' => 'auth']);
-// $routes->patch('/editUser/(:segment)', 'CrudUsers::update/$1', ['filter' => 'auth']);
+$routes->get('/editUser/(:segment)', 'CrudUsers::edit/$1', ['filter' => 'auth']);
+$routes->put('/editUser/(:segment)', 'CrudUsers::update/$1', ['filter' => 'auth']);
+$routes->patch('/editUser/(:segment)', 'CrudUsers::update/$1', ['filter' => 'auth']);
 
 $routes->get('bajaUsuario/(:segment)', 'CrudUsers::bajaUsuario/$1', ['filter' => 'auth']);
 $routes->patch('bajaUsuario/(:segment)', 'CrudUsers::bajaUsuario/$1', ['filter' => 'auth']);
@@ -68,9 +68,9 @@ $routes->get('/crudProductos', 'CrudProductos::index', ['filter' => 'auth']);
 $routes->get('/addProducto', 'CrudProductos::new', ['filter' => 'auth']);
 $routes->post('/addProducto', 'CrudProductos::create', ['filter' => 'auth']);
 
-// $routes->get('/editUser/(:segment)', 'CrudProductos::edit/$1', ['filter' => 'auth']);
-// $routes->put('/editUser/(:segment)', 'CrudProductos::update/$1', ['filter' => 'auth']);
-// $routes->patch('/editUser/(:segment)', 'CrudProductos::update/$1', ['filter' => 'auth']);
+$routes->get('editProducto/(:segment)', 'CrudProductos::edit/$1', ['filter' => 'auth']);
+$routes->put('editProducto/(:segment)', 'CrudProductos::update/$1', ['filter' => 'auth']);
+$routes->patch('editProducto/(:segment)', 'CrudProductos::update/$1', ['filter' => 'auth']);
 
 $routes->get('bajaProducto/(:segment)', 'CrudProductos::bajaProducto/$1', ['filter' => 'auth']);
 $routes->patch('bajaProducto/(:segment)', 'CrudProductos::bajaProducto/$1', ['filter' => 'auth']);

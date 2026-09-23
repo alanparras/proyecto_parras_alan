@@ -25,4 +25,16 @@ class UsersModel extends Model{
         }
         return null;
     }
+
+    public function contarAdminsActivos($idExcluir = null)
+    {
+        $builder = $this->where('id_perfil', 1) // ajustá el 1 si tu id de perfil admin es otro
+                         ->where('active', 1);
+
+        if ($idExcluir !== null) {
+            $builder->where('id_user !=', $idExcluir);
+        }
+
+        return $builder->countAllResults();
+    }
 }

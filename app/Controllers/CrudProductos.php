@@ -10,7 +10,6 @@ class CrudProductos extends BaseController
 {
     protected $helpers = ['form', 'url'];
 
-
     public function index()
     {
         $data = ['titulo' => 'Prime Shoes | Productos'];
@@ -21,7 +20,6 @@ class CrudProductos extends BaseController
         $data['marcas'] = $marcasModel->findAll();
         $data['productos'] = $productosModel->findAll();
 
-        // view('front/plantilla/head.php', $data);
         return view('front/crudProductos/crudProductos', $data);
     }
 
@@ -30,28 +28,14 @@ class CrudProductos extends BaseController
         $data = ['titulo' => 'Prime Shoes | Agregar Producto'];
 
         $marcasModel = new MarcasModel();
-        $productosModel = new ProductsModel();
-
         $data['marcas'] = $marcasModel->findAll();
-        $data['productos'] = $productosModel->findAll();
 
-        // view('front/plantilla/head.php', $data);
         return view('front/crudProductos/addProducto', $data);
     }
 
     public function create()
     {
-        $rules = [ // validaciones del formulario
-            'nombre' => 'required|max_length[200]',
-            'descripcion' => 'required',
-            'precio' => 'required',
-            'stock' => 'required|min_length[1]', // fijate en la base de datos este registro y tambien los maximos de caracteres de los registros
-            // 'id_marca' => 'required',
-        ];
-
-        if (!$this->validate($rules)) { //si no se cumplen las validaciones
-
-            //regresa a la pagina anterior con todos los campos que el usuario introdujo, ademas se muestra una lista de los errores que tuvo el mismo
+        if (!$this->validate($this->reglasProducto())) {
             return redirect()->back()->withInput()->with('errors', $this->validator->listErrors());
         }
 
@@ -59,57 +43,113 @@ class CrudProductos extends BaseController
         $post = $this->request->getPost(['nombre', 'descripcion', 'precio', 'stock', 'marca']);
 
         $productosModel->insert([
-            'nombre' => $post['nombre'],
+            'nombre'      => trim($post['nombre']),
             'descripcion' => trim($post['descripcion']),
-            'precio' => trim($post['precio']),
-            'stock' => trim($post['stock']),
-            'id_marca' => trim($post['marca']),
-            'activo' => 1,
+            'precio'      => trim($post['precio']),
+            'stock'       => trim($post['stock']),
+            'id_marca'    => trim($post['marca']),
+            'activo'      => 1,
+        ]);
+
+        $idAgregado = $productosModel->getInsertID();
+
+        $file = $this->request->getFile('fotoProducto');
+
+        if ($file !== null && $file->isValid() && !$file->hasMoved()) {
+            $ruta = ROOTPATH . 'assets/img/productos/' . $idAgregado;
+            $file->move($ruta, 'principal.jpg');
+        }
+
+        session()->setFlashdata('success', 'Producto agregado con éxito');
+        return redirect()->to('crudProductos');
+    }
+
+    public function edit($id)
+    {
+        $productosModel = new ProductsModel();
+        $marcasModel = new MarcasModel();
+
+        $producto = $productosModel->find($id);
+
+        if ($producto === null) {
+            return redirect()->to('crudProductos');
+        }
+
+        $data = [
+            'titulo'   => 'Prime Shoes | Editar Producto',
+            'producto' => $producto,
+            'marcas'   => $marcasModel->findAll(),
+        ];
+
+        return view('front/crudProductos/editProducto', $data);
+    }
+
+    public function update($id)
+    {
+        $productosModel = new ProductsModel();
+
+        $producto = $productosModel->find($id);
+
+        if ($producto === null) {
+            return redirect()->to('crudProductos');
+        }
+
+        if (!$this->validate($this->reglasProducto())) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->listErrors());
+        }
+
+        $post = $this->request->getPost(['nombre', 'descripcion', 'precio', 'stock', 'marca']);
+
+        $productosModel->update($id, [
+            'nombre'      => trim($post['nombre']),
+            'descripcion' => trim($post['descripcion']),
+            'precio'      => trim($post['precio']),
+            'stock'       => trim($post['stock']),
+            'id_marca'    => trim($post['marca']),
         ]);
 
         $file = $this->request->getFile('fotoProducto');
-        $idAgregado = $productosModel->getInsertID();
 
-        if(!$file->isValid()){
-            echo $file->getErrorString();
-            exit;
-        }
-
-        if(!$file->hasMoved()){
-            $ruta = ROOTPATH . 'assets/img/productos/'. $idAgregado;
-
+        // La imagen es opcional al editar: solo se reemplaza si se subió una nueva
+        if ($file !== null && $file->isValid() && !$file->hasMoved()) {
+            $ruta = ROOTPATH . 'assets/img/productos/' . $id;
             $file->move($ruta, 'principal.jpg');
         }
-        
 
-        session()->setFlashdata('success', 'Producto agregado con exito');
-        return redirect()->to('crudProductos'); //configuar ventana emergente
+        session()->setFlashdata('success', 'Producto actualizado con éxito');
+        return redirect()->to('crudProductos');
     }
 
     public function bajaProducto($id)
     {
         $productosModel = new ProductsModel();
-
         $productosModel->update($id, ['activo' => false]);
 
-        // $cart = \Config\Services::Cart();
-        // $cart->remove($id);
-
         session()->setFlashdata('success', 'El producto se ha dado de baja');
-        return redirect()->to('crudProductos'); //configuar ventana emergente
+        return redirect()->to('crudProductos');
     }
 
     public function altaProducto($id)
     {
         $productosModel = new ProductsModel();
-
         $productosModel->update($id, ['activo' => true]);
 
         session()->setFlashdata('success', 'El producto se ha dado de alta');
-        return redirect()->to('crudProductos'); //configuar ventana emergente
+        return redirect()->to('crudProductos');
     }
 
     public function delete()
     {
+    }
+
+    private function reglasProducto()
+    {
+        return [
+            'nombre'      => 'required|max_length[200]',
+            'descripcion' => 'required',
+            'precio'      => 'required|decimal|greater_than[0]',
+            'stock'       => 'required|integer|greater_than_equal_to[0]',
+            'marca'       => 'required|is_not_unique[marcas.id_marca]',
+        ];
     }
 }

@@ -16,13 +16,13 @@
 
                         <?php if ((session()->get('userProfile') == 1)) : ?>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url('') ?>crudUsers">USUARIOS</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="<?= base_url('') ?>crudConsultas">CONSULTAS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="<?= base_url('') ?>crudVentas">VENTAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= base_url('') ?>crudUsers">CRUD DE USUARIOS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="<?= base_url('') ?>crudProductos">CRUD DE PRODUCTOS</a>
