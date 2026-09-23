@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initialscale=1, shrink-to-fit=no">
     <link rel="icon" href="<?= base_url('') ?>assets/img/logos/icono.png" type="image/png">
     <link href="<?= base_url('assets/css/plantilla/layout.css') ?>" rel="stylesheet">
-    <?php echo $this->renderSection("estilosIndividuales"); ?>
     <link href="<?= base_url('') ?>assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <?php echo $this->renderSection("estilosIndividuales"); ?>
     <script src="https://kit.fontawesome.com/2c624d5523.js" crossorigin="anonymous"></script>
     <title><?php echo $titulo ?? ''; ?></title>
 </head>

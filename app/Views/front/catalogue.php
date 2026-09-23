@@ -22,15 +22,27 @@ echo $this->section('contenido'); ?>
 
     <section class="sectionLogin">
         <div class="divBoxForm">
-            <div class="contenedorTarjetas">
-                <?php foreach ($productos as $producto) : ?>
-                    <?php if ($producto['activo']) : ?>
+
+            <form action="<?= base_url('catalogue') ?>" method="get" class="formBusqueda">
+                <input
+                    type="text"
+                    name="busqueda"
+                    class="inputBusqueda"
+                    placeholder="Buscar productos..."
+                    value="<?= esc($busqueda ?? '') ?>">
+                <button type="submit" class="botonBusqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <?php if (empty($productos)) : ?>
+                <p class="sinResultados">No se encontraron productos<?= !empty($busqueda) ? ' para "' . esc($busqueda) . '"' : '' ?>.</p>
+            <?php else : ?>
+
+                <div class="contenedorTarjetas">
+                    <?php foreach ($productos as $producto) : ?>
                         <div class="divTarjeta">
                             <a href="<?= base_url('details/' . $producto['id_producto']); ?>" class="linkProducto">
                                 <?php
-
                                 $imagen = "assets/img/productos/" . $producto['id_producto'] . "/principal.jpg";
-
                                 if (!file_exists($imagen)) {
                                     $imagen = "assets/img/productos/no-photo.jpg";
                                 }
@@ -49,9 +61,15 @@ echo $this->section('contenido'); ?>
                                 </div>
                             </a>
                         </div>
-                    <?php endif; ?>
-                <?php endforeach; ?>
-            </div>
+                    <?php endforeach; ?>
+                </div>
+
+                <div class="contenedorPaginacion">
+                    <?= $pager->links() ?>
+                </div>
+
+            <?php endif; ?>
+
         </div>
     </section>
 
