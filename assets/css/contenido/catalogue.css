@@ -44,6 +44,40 @@ html body{
     max-width: 350px;
 }
 
+.divTarjeta--sinStock{
+    opacity: 0.6;
+}
+.divTarjeta--sinStock:hover{
+    opacity: 0.8;
+}
+
+.divImagenProducto{
+    position: relative;
+}
+
+.badgeSinStock{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #af2121;
+    color: #fff9e1;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 20px;
+    box-shadow: -2px 2px 4px #2e251f55;
+}
+
+.agregarCarrito--disabled{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ab9680;
+    cursor: not-allowed;
+}
+
 .divImagenProducto{
     display: flex;
     flex: 1;
@@ -106,10 +140,11 @@ html body{
 
 
 .contenedorPaginacion {
+    display: flex;
+    justify-content: center;
     margin-top: 1rem;
 }
 .contenedorPaginacion nav ul.pagination{
-    display: flex;
     list-style: none;
     gap: 8px;
     margin: 0;
