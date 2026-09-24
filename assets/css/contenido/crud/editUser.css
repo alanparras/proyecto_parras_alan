@@ -26,7 +26,7 @@ html body {
 }
 .formLogin {
   max-width: 700px;
-  flex: 1;
+  /* flex: 1; */
   background-color: #3b2f27;
   padding: 20px;
   border: 6px solid #524135;
@@ -93,6 +93,7 @@ select.inputLogin {
 }
 .input-container--botones {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 .inputLogin:valid ~ .underline {

@@ -79,6 +79,22 @@ $routes->get('altaProducto/(:segment)', 'CrudProductos::altaProducto/$1', ['filt
 $routes->patch('altaProducto/(:segment)', 'CrudProductos::altaProducto/$1', ['filter' => 'auth']);
 
 
+// -------- CRUD MARCAS --------
+$routes->get('/crudMarcas', 'CrudMarcas::index', ['filter' => 'auth']);
+$routes->get('/addMarca', 'CrudMarcas::new', ['filter' => 'auth']);
+$routes->post('/addMarca', 'CrudMarcas::create', ['filter' => 'auth']);
+
+$routes->get('/editMarca/(:segment)', 'CrudMarcas::edit/$1', ['filter' => 'auth']);
+$routes->put('/editMarca/(:segment)', 'CrudMarcas::update/$1', ['filter' => 'auth']);
+$routes->patch('/editMarca/(:segment)', 'CrudMarcas::update/$1', ['filter' => 'auth']);
+
+$routes->get('bajaMarca/(:segment)', 'CrudMarcas::bajaMarca/$1', ['filter' => 'auth']);
+$routes->patch('bajaMarca/(:segment)', 'CrudMarcas::bajaMarca/$1', ['filter' => 'auth']);
+
+$routes->get('altaMarca/(:segment)', 'CrudMarcas::altaMarca/$1', ['filter' => 'auth']);
+$routes->patch('altaMarca/(:segment)', 'CrudMarcas::altaMarca/$1', ['filter' => 'auth']);
+
+
 // -------- CRUD VENTAS--------
 $routes->get('/crudVentas', 'CrudVentas::index', ['filter' => 'auth']);
 

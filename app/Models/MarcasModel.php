@@ -8,7 +8,7 @@ class MarcasModel extends Model{
     protected $returnType = 'array';
     protected $useAutoIncrement = true;
     protected $protectFields = true;
-    protected $allowedFields = ['nombre_marca'];
+    protected $allowedFields = ['nombre_marca', 'activo'];
 
     //dates
     // protected $useTimestamps = true;

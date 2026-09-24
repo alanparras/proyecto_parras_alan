@@ -27,6 +27,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="<?= base_url('') ?>crudProductos">CRUD DE PRODUCTOS</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= base_url('') ?>crudMarcas">CRUD DE MARCAS</a>
+                            </li>
                         <?php endif; ?>
                         <?php if ((session()->get('userProfile') == 2)) : ?>
                             <li class="nav-item">

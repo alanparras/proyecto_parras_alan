@@ -6,7 +6,7 @@ echo $this->extend('front/plantilla/layout');
 // ----- CARGAR DE ESTILOS PROPIOS -----
 echo $this->section('estilosIndividuales'); ?>
 
-<link href="<?= base_url('assets/css/contenido/crud/editUser.css')?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/contenido/crud/editUser.css')?>" rel="stylesheet">
 
 <?php echo $this->endSection();
 

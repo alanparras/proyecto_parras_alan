@@ -28,7 +28,7 @@ class CrudProductos extends BaseController
         $data = ['titulo' => 'Prime Shoes | Agregar Producto'];
 
         $marcasModel = new MarcasModel();
-        $data['marcas'] = $marcasModel->findAll();
+        $data['marcas'] = $marcasModel->where('activo', 1)->findAll();
 
         return view('front/crudProductos/addProducto', $data);
     }
@@ -78,7 +78,7 @@ class CrudProductos extends BaseController
         $data = [
             'titulo'   => 'Prime Shoes | Editar Producto',
             'producto' => $producto,
-            'marcas'   => $marcasModel->findAll(),
+            'marcas'   => $marcasModel->where('activo', 1)->findAll(),
         ];
 
         return view('front/crudProductos/editProducto', $data);

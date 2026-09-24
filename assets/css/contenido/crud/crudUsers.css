@@ -37,6 +37,9 @@ h2.tituloBox{
 
 table.table{
     max-width: 1200px;
+    a.btn.btn-success {
+        margin-bottom: 0;
+    }
 }
 
 a.btn.btn-success{
