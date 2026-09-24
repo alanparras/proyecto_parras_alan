@@ -1,9 +1,0 @@
-__ci_last_regenerate|i:1790183138;_ci_previous_url|s:53:"http://localhost/proyecto_parras_alan/editProducto/29";logged_in|b:1;userId|s:1:"1";userProfile|s:1:"1";userName|s:4:"alan";_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:7:{s:14:"csrf_test_name";s:32:"cefb2c1a446d7460c999624792669469";s:7:"_method";s:3:"put";s:6:"nombre";s:6:"prueba";s:5:"marca";s:1:"1";s:6:"precio";s:2:"-1";s:5:"stock";s:2:"20";s:11:"descripcion";s:6:"Prueba";}}__ci_vars|a:3:{s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";s:6:"errors";s:3:"old";}_ci_validation_errors|a:1:{s:6:"precio";s:53:"El campo precio debe contener un número mayor que 0.";}errors|s:262:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
-	<div class="errors" role="alert">
-		<ul>
-					<li>El campo precio debe contener un número mayor que 0.</li>
-				</ul>
-	</div>
-
-<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
-";

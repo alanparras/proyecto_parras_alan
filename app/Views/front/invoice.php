@@ -61,7 +61,12 @@ echo $this->section('contenido'); ?>
 
                 <div class="accionesFactura">
                     <a href="<?= base_url('invoice/' . $venta['id_venta'] . '/download') ?>" class="botonCompra">Descargar PDF</a> |
-                    <a href="<?= base_url('myPurchases') ?>" class="botonCompra botonCompra--secundario">Volver a mis compras</a>
+                    
+                    <?php if (session()->get('userProfile') == 1) : ?>
+                        <a href="<?= base_url('crudVentas/detalle/' . $venta['id_venta']) ?>" class="botonCompra botonCompra--secundario">Volver al detalle de venta</a>
+                    <?php else : ?>
+                        <a href="<?= base_url('myPurchases') ?>" class="botonCompra botonCompra--secundario">Volver a mis compras</a>
+                    <?php endif; ?>
                 </div>
 
                 <p class="avisoFactura">* Comprobante no válido como factura fiscal.</p>

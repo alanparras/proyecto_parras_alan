@@ -14,32 +14,40 @@ echo $this->section('estilosIndividuales'); ?>
 
 echo $this->section('contenido'); ?>
 
-<section class="sectionLogin">
-    <div class="divBoxForm">
+    <section class="sectionLogin">
+        <div class="divBoxForm">
 
-        <h2 class="tituloBox">Consultas</h2>
+            <h2 class="tituloBox">Consultas</h2>
 
-        <table class="table table-hover table-bordered">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">NOMBRE</th>
-                    <th scope="col">EMAIL</th>
-                    <th scope="col">CONSULTA</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($consultas as $consulta) : ?>
+            <table class="table table-hover table-bordered">
+                <thead class="thead-dark">
                     <tr>
-                        <td><?= $consulta['id_consulta']; ?></td>
-                        <td><?= $consulta['nombre']; ?></td>
-                        <td><?= $consulta['email']; ?></td>
-                        <td><?= $consulta['consulta']; ?></td>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Consulta</th>
+                        <th scope="col">Perfil</th>
                     </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-    </div>
-</section>
+                </thead>
+                <tbody>
+                    <?php foreach ($consultas as $consulta) : ?>
+                        <tr>
+                            <td><?= $consulta['id_consulta']; ?></td>
+                            <td><?= $consulta['nombre']; ?></td>
+                            <td><?= $consulta['email']; ?></td>
+                            <td><?= $consulta['consulta']; ?></td>
+                            <td>
+                                <?php if ($consulta['id_user'] === null) : ?>
+                                    <span class="badge bg-secondary">Invitado</span>
+                                <?php else : ?>
+                                    <span class="badge bg-primary"><?= $consulta['perfil_descripcion']; ?></span>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
 <?php echo $this->endSection(); ?>

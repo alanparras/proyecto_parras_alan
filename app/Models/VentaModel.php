@@ -15,6 +15,25 @@ class VentaModel extends Model{
     protected $createdField = 'created_at';
     protected $updatedField = false;
 
+    // Todas las ventas con el nombre de usuario, para el listado admin
+    public function getTodasConUsuario()
+    {
+        return $this->select('ventas.*, users.user, users.nombre, users.apellido')
+                    ->join('users', 'users.id_user = ventas.id_user')
+                    ->orderBy('ventas.created_at', 'DESC')
+                    ->findAll();
+    }
+
+    // Una venta puntual con su usuario, para el detalle y la factura
+    public function getVentaConUsuario($idVenta)
+    {
+        return $this->select('ventas.*, users.nombre, users.apellido, users.dni, users.email, users.user')
+                    ->join('users', 'users.id_user = ventas.id_user')
+                    ->where('ventas.id_venta', $idVenta)
+                    ->first();
+    }
+
+    // Compras de un usuario puntual, para "Mis Compras"
     public function getComprasPorUsuario($idUser)
     {
         return $this->where('id_user', $idUser)
@@ -22,6 +41,7 @@ class VentaModel extends Model{
                     ->findAll();
     }
 
+    // Detalle de productos de una venta puntual
     public function getDetalleConProductos($idVenta)
     {
         return $this->db->table('ventas_detalle')
@@ -30,13 +50,5 @@ class VentaModel extends Model{
                     ->where('ventas_detalle.id_venta', $idVenta)
                     ->get()
                     ->getResultArray();
-    }
-
-    public function getVentaConUsuario($idVenta)
-    {
-        return $this->select('ventas.*, users.nombre, users.apellido, users.dni, users.email')
-                    ->join('users', 'users.id_user = ventas.id_user')
-                    ->where('ventas.id_venta', $idVenta)
-                    ->first();
     }
 }

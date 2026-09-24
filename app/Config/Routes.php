@@ -45,61 +45,64 @@ $routes->get('/myPurchases', 'My_Purchases::index', ['filter' => 'auth']);
 $routes->get('/thanks', 'Thanks::index');
 $routes->get('/thanks/(:num)', 'Thanks::index/$1');
 
+
 // -------- CRUD USUARIOS --------
-$routes->get('/crudUsers', 'CrudUsers::index', ['filter' => 'auth']);
+$routes->get('/crudUsers', 'CrudUsers::index', ['filter' => 'adminAuth']);
 
-$routes->get('/addUser', 'CrudUsers::new', ['filter' => 'auth']);
-$routes->post('/addUser', 'CrudUsers::create', ['filter' => 'auth']);
+$routes->get('/addUser', 'CrudUsers::new', ['filter' => 'adminAuth']);
+$routes->post('/addUser', 'CrudUsers::create', ['filter' => 'adminAuth']);
 
-$routes->get('/editUser/(:segment)', 'CrudUsers::edit/$1', ['filter' => 'auth']);
-$routes->put('/editUser/(:segment)', 'CrudUsers::update/$1', ['filter' => 'auth']);
-$routes->patch('/editUser/(:segment)', 'CrudUsers::update/$1', ['filter' => 'auth']);
+$routes->get('/editUser/(:segment)', 'CrudUsers::edit/$1', ['filter' => 'adminAuth']);
+$routes->put('/editUser/(:segment)', 'CrudUsers::update/$1', ['filter' => 'adminAuth']);
+$routes->patch('/editUser/(:segment)', 'CrudUsers::update/$1', ['filter' => 'adminAuth']);
 
-$routes->get('bajaUsuario/(:segment)', 'CrudUsers::bajaUsuario/$1', ['filter' => 'auth']);
-$routes->patch('bajaUsuario/(:segment)', 'CrudUsers::bajaUsuario/$1', ['filter' => 'auth']);
+$routes->get('bajaUsuario/(:segment)', 'CrudUsers::bajaUsuario/$1', ['filter' => 'adminAuth']);
+$routes->patch('bajaUsuario/(:segment)', 'CrudUsers::bajaUsuario/$1', ['filter' => 'adminAuth']);
 
-$routes->get('altaUsuario/(:segment)', 'CrudUsers::altaUsuario/$1', ['filter' => 'auth']);
-$routes->patch('altaUsuario/(:segment)', 'CrudUsers::altaUsuario/$1', ['filter' => 'auth']);
+$routes->get('altaUsuario/(:segment)', 'CrudUsers::altaUsuario/$1', ['filter' => 'adminAuth']);
+$routes->patch('altaUsuario/(:segment)', 'CrudUsers::altaUsuario/$1', ['filter' => 'adminAuth']);
 
 $routes->delete('/', 'CrudUsers::delete');
 
+
 // -------- CRUD PRODUCTOS--------
-$routes->get('/crudProductos', 'CrudProductos::index', ['filter' => 'auth']);
-$routes->get('/addProducto', 'CrudProductos::new', ['filter' => 'auth']);
-$routes->post('/addProducto', 'CrudProductos::create', ['filter' => 'auth']);
+$routes->get('/crudProductos', 'CrudProductos::index', ['filter' => 'adminAuth']);
+$routes->get('/addProducto', 'CrudProductos::new', ['filter' => 'adminAuth']);
+$routes->post('/addProducto', 'CrudProductos::create', ['filter' => 'adminAuth']);
 
-$routes->get('editProducto/(:segment)', 'CrudProductos::edit/$1', ['filter' => 'auth']);
-$routes->put('editProducto/(:segment)', 'CrudProductos::update/$1', ['filter' => 'auth']);
-$routes->patch('editProducto/(:segment)', 'CrudProductos::update/$1', ['filter' => 'auth']);
+$routes->get('editProducto/(:segment)', 'CrudProductos::edit/$1', ['filter' => 'adminAuth']);
+$routes->put('editProducto/(:segment)', 'CrudProductos::update/$1', ['filter' => 'adminAuth']);
+$routes->patch('editProducto/(:segment)', 'CrudProductos::update/$1', ['filter' => 'adminAuth']);
 
-$routes->get('bajaProducto/(:segment)', 'CrudProductos::bajaProducto/$1', ['filter' => 'auth']);
-$routes->patch('bajaProducto/(:segment)', 'CrudProductos::bajaProducto/$1', ['filter' => 'auth']);
+$routes->get('bajaProducto/(:segment)', 'CrudProductos::bajaProducto/$1', ['filter' => 'adminAuth']);
+$routes->patch('bajaProducto/(:segment)', 'CrudProductos::bajaProducto/$1', ['filter' => 'adminAuth']);
 
-$routes->get('altaProducto/(:segment)', 'CrudProductos::altaProducto/$1', ['filter' => 'auth']);
-$routes->patch('altaProducto/(:segment)', 'CrudProductos::altaProducto/$1', ['filter' => 'auth']);
+$routes->get('altaProducto/(:segment)', 'CrudProductos::altaProducto/$1', ['filter' => 'adminAuth']);
+$routes->patch('altaProducto/(:segment)', 'CrudProductos::altaProducto/$1', ['filter' => 'adminAuth']);
 
 
 // -------- CRUD MARCAS --------
-$routes->get('/crudMarcas', 'CrudMarcas::index', ['filter' => 'auth']);
-$routes->get('/addMarca', 'CrudMarcas::new', ['filter' => 'auth']);
-$routes->post('/addMarca', 'CrudMarcas::create', ['filter' => 'auth']);
+$routes->get('/crudMarcas', 'CrudMarcas::index', ['filter' => 'adminAuth']);
+$routes->get('/addMarca', 'CrudMarcas::new', ['filter' => 'adminAuth']);
+$routes->post('/addMarca', 'CrudMarcas::create', ['filter' => 'adminAuth']);
 
-$routes->get('/editMarca/(:segment)', 'CrudMarcas::edit/$1', ['filter' => 'auth']);
-$routes->put('/editMarca/(:segment)', 'CrudMarcas::update/$1', ['filter' => 'auth']);
-$routes->patch('/editMarca/(:segment)', 'CrudMarcas::update/$1', ['filter' => 'auth']);
+$routes->get('/editMarca/(:segment)', 'CrudMarcas::edit/$1', ['filter' => 'adminAuth']);
+$routes->put('/editMarca/(:segment)', 'CrudMarcas::update/$1', ['filter' => 'adminAuth']);
+$routes->patch('/editMarca/(:segment)', 'CrudMarcas::update/$1', ['filter' => 'adminAuth']);
 
-$routes->get('bajaMarca/(:segment)', 'CrudMarcas::bajaMarca/$1', ['filter' => 'auth']);
-$routes->patch('bajaMarca/(:segment)', 'CrudMarcas::bajaMarca/$1', ['filter' => 'auth']);
+$routes->get('bajaMarca/(:segment)', 'CrudMarcas::bajaMarca/$1', ['filter' => 'adminAuth']);
+$routes->patch('bajaMarca/(:segment)', 'CrudMarcas::bajaMarca/$1', ['filter' => 'adminAuth']);
 
-$routes->get('altaMarca/(:segment)', 'CrudMarcas::altaMarca/$1', ['filter' => 'auth']);
-$routes->patch('altaMarca/(:segment)', 'CrudMarcas::altaMarca/$1', ['filter' => 'auth']);
+$routes->get('altaMarca/(:segment)', 'CrudMarcas::altaMarca/$1', ['filter' => 'adminAuth']);
+$routes->patch('altaMarca/(:segment)', 'CrudMarcas::altaMarca/$1', ['filter' => 'adminAuth']);
 
 
 // -------- CRUD VENTAS--------
-$routes->get('/crudVentas', 'CrudVentas::index', ['filter' => 'auth']);
+$routes->get('/crudVentas', 'CrudVentas::index', ['filter' => 'adminAuth']);
+$routes->get('crudVentas/detalle/(:num)', 'CrudVentas::detalle/$1', ['filter' => 'adminAuth']);
 
 // -------- CRUD CONSULTAS--------
-$routes->get('/crudConsultas', 'CrudConsultas::index', ['filter' => 'auth']);
+$routes->get('/crudConsultas', 'CrudConsultas::index', ['filter' => 'adminAuth']);
 
 
 // $routes->resource('crudUsers', ['placeholder' => '(:num)', 'except' => 'show']);

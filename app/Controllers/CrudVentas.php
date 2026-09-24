@@ -3,31 +3,43 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\ProductsModel;
-use App\Models\VentaDetalleModel;
 use App\Models\VentaModel;
-use App\Models\UsersModel;
 
 class CrudVentas extends BaseController
 {
     protected $helpers = ['form', 'url'];
 
-    
     public function index()
     {
-        $data = ['titulo' => 'Prime Shoes | Ventas'];
+        $ventaModel = new VentaModel();
+
+        $data = [
+            'titulo' => 'Prime Shoes | Ventas',
+            'ventas' => $ventaModel->getTodasConUsuario(),
+        ];
+
+        return view('front/crudVentas/crudVentas', $data);
+    }
+
+    public function detalle($id = null)
+    {
+        if ($id == null) {
+            return redirect()->to('crudVentas');
+        }
 
         $ventaModel = new VentaModel();
-        $ventaDetalleModel = new VentaDetalleModel();
-        $productosModel = new ProductsModel();
-        $usersModel = new UsersModel();
+        $venta = $ventaModel->getVentaConUsuario($id);
 
-        $data['ventas'] = $ventaModel->findAll();
-        $data['ventaDetalles'] = $ventaDetalleModel->findAll();
-        $data['usuarios'] = $usersModel->findAll();
-        $data['productos'] = $productosModel->findAll();
+        if ($venta === null) {
+            return redirect()->to('crudVentas');
+        }
 
-        // view('front/plantilla/head.php', $data);
-        return view('front/crudVentas/crudVentas', $data);
+        $data = [
+            'titulo'  => 'Prime Shoes | Detalle de Venta #' . $id,
+            'venta'   => $venta,
+            'detalle' => $ventaModel->getDetalleConProductos($id),
+        ];
+
+        return view('front/crudVentas/detalleVenta', $data);
     }
 }

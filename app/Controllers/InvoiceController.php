@@ -16,8 +16,10 @@ class InvoiceController extends BaseController
         $ventaModel = new VentaModel();
         $venta = $ventaModel->getVentaConUsuario($idVenta);
 
-        // Que no pueda ver facturas de otros cambiando el número en la URL
-        if ($venta === null || $venta['id_user'] != session()->get('userId')) {
+        $esDueño = ($venta !== null && $venta['id_user'] == session()->get('userId'));
+        $esAdmin = (session()->get('userProfile') == 1);
+
+        if ($venta === null || (!$esDueño && !$esAdmin)) {
             return redirect()->to(base_url('myPurchases'));
         }
 
@@ -41,7 +43,10 @@ class InvoiceController extends BaseController
         $ventaModel = new VentaModel();
         $venta = $ventaModel->getVentaConUsuario($idVenta);
 
-        if ($venta === null || $venta['id_user'] != session()->get('userId')) {
+        $esDueño = ($venta !== null && $venta['id_user'] == session()->get('userId'));
+        $esAdmin = (session()->get('userProfile') == 1);
+
+        if ($venta === null || (!$esDueño && !$esAdmin)) {
             return redirect()->to(base_url('myPurchases'));
         }
 

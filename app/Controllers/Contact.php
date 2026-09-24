@@ -16,18 +16,20 @@ class Contact extends BaseController
 
     public function send()
     {
-        $rules = [ // validaciones del formulario
+        $rules = [
             'consulta' => 'required|max_length[500]|min_length[10]',
         ];
 
-        if (!$this->validate($rules)) { //si no se cumplen las validaciones
+        if (!session()->get('logged_in')) {
+            $rules['nombre'] = 'required|max_length[50]';
+            $rules['email'] = 'required|valid_email|max_length[100]';
+        }
 
-            //regresa a la pagina anterior con todos los campos que el usuario introdujo, ademas se muestra una lista de los errores que tuvo el mismo
+        if (!$this->validate($rules)) {
             return redirect()->back()->withInput()->with('errors', $this->validator->listErrors());
         }
 
         $consultaModel = new ConsultaModel();
-
         $post = $this->request->getPost(['nombre', 'email', 'consulta']);
 
         if (session()->get('logged_in')) {
@@ -35,20 +37,21 @@ class Contact extends BaseController
             $usuario = $userModel->find(session()->get('userId'));
 
             $consultaModel->insert([
-                'nombre' => $usuario['nombre'] . ' ' . $usuario['apellido'],
-                'email' => $usuario['email'],
+                'nombre'   => $usuario['nombre'] . ' ' . $usuario['apellido'],
+                'email'    => $usuario['email'],
                 'consulta' => $post['consulta'],
+                'id_user'  => $usuario['id_user'],
             ]);
         } else {
             $consultaModel->insert([
-                'nombre' => $post['nombre'],
-                'email' => $post['email'],
+                'nombre'   => $post['nombre'],
+                'email'    => $post['email'],
                 'consulta' => $post['consulta'],
+                'id_user'  => null,
             ]);
         }
 
         session()->setFlashdata('success', 'Consulta enviada con éxito.');
-        return redirect()->to('contact'); //configuar ventana emergente
-
+        return redirect()->to('contact');
     }
 }
