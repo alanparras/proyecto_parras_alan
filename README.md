@@ -1,367 +1,274 @@
 # Prime Shoes
 
-**Prime Shoes** es una aplicación web de comercio electrónico desarrollada para la gestión y venta de calzado. El sistema permite a los visitantes consultar el catálogo de productos, a los clientes gestionar sus compras y a los administradores administrar productos, usuarios, consultas y ventas.
+**Prime Shoes** es una aplicación web de comercio electrónico para la venta de calzado. Permite a los visitantes explorar el catálogo, a los clientes realizar compras y obtener sus facturas, y a los administradores gestionar usuarios, productos, marcas, ventas y consultas.
 
-El proyecto fue desarrollado utilizando **PHP y CodeIgniter 4**, junto con **MySQL**, **HTML**, **CSS**, **JavaScript** y **Bootstrap**.
-
----
-
-## Descripción
-
-Prime Shoes está orientado a una tienda de calzado que necesita administrar sus productos, stock, usuarios y ventas mediante una plataforma web.
-
-El sistema contempla tres tipos de interacción:
-
-* **Visitante:** puede navegar por el sitio, consultar productos y utilizar el carrito.
-* **Cliente:** puede registrarse, iniciar sesión, gestionar su cuenta y realizar compras.
-* **Administrador:** puede administrar usuarios, productos, consultas y ventas.
-
-El proyecto implementa las funcionalidades definidas en la especificación de requisitos de software (ERS).
+Desarrollada con **PHP 8.2 y CodeIgniter 4**, **MySQL**, **HTML**, **CSS**, **JavaScript** y **Bootstrap**.
 
 ---
 
-## Funcionalidades
+## Instalación rápida
 
-### Gestión de usuarios
+> Si es la primera vez que usás el proyecto, seguí estos pasos en orden. Si algo falla, revisá la sección [Solución de problemas](#solución-de-problemas).
 
-* Registro de nuevos clientes.
-* Inicio de sesión.
-* Cierre de sesión.
-* Gestión de cuentas de clientes.
-* Activación y desactivación de cuentas.
-* Control de acceso según el perfil del usuario.
+### 1. Requisitos
 
-### Catálogo de productos
+* **XAMPP** con PHP 8.2 (versión con la que se desarrolló y probó) y MySQL/MariaDB.
+* Navegador web moderno.
 
-* Visualización del catálogo sin necesidad de iniciar sesión.
-* Consulta del detalle de cada producto.
-* Visualización de:
+Extensiones de PHP necesarias (en XAMPP se activan en `php.ini`, quitando el `;` del inicio de la línea):
 
-  * Nombre.
-  * Descripción.
-  * Precio.
-  * Marca.
-  * Stock disponible.
-* Gestión del estado de los productos.
+| Extensión | Para qué se usa |
+| --------- | --------------- |
+| `intl` | Requerida por CodeIgniter 4 |
+| `mbstring` | Requerida por CodeIgniter 4 y Dompdf |
+| `json` | Requerida por CodeIgniter 4 |
+| `mysqli` | Conexión con MySQL |
+| `dom` | Generación de facturas en PDF (Dompdf) |
+| `zip` | Solo si hay que ejecutar `composer install` |
 
-### Carrito de compras
+Después de modificar `php.ini` hay que **reiniciar Apache** desde el panel de XAMPP. Para verificar las extensiones activas: `php -m`.
 
-* Agregar productos al carrito.
-* Modificar cantidades.
-* Control de cantidades según el stock disponible.
-* Eliminar productos.
-* Vaciar el carrito.
-* Visualizar el contenido del carrito.
+### 2. Obtener el proyecto
 
-### Compras
+Copiar el proyecto dentro de `htdocs` (por ejemplo `C:\xampp\htdocs`).
 
-* Los clientes pueden realizar compras con los productos seleccionados.
-* Registro de las ventas realizadas.
-* Registro del detalle de cada venta.
-* Actualización del stock de productos.
-
-### ⚙️ Panel de administración
-
-El administrador dispone de funcionalidades para:
-
-* Gestionar usuarios.
-* Activar y desactivar cuentas.
-* Gestionar productos.
-* Agregar productos.
-* Modificar productos.
-* Activar y desactivar productos.
-* Consultar las ventas realizadas.
-* Consultar los mensajes enviados mediante el formulario de contacto.
-
-### Vistas informativas
-
-El sistema incluye diferentes vistas destinadas a los visitantes y clientes:
-
-* Inicio.
-* Quiénes somos.
-* Catálogo.
-* Detalle del producto.
-* Comercialización.
-* Contacto.
-* Términos y usos.
-* Carrito de compras.
-
----
-
-## Tecnologías utilizadas
-
-| Tecnología        | Uso                                              |
-| ----------------- | ------------------------------------------------ |
-| **PHP 8.2.12**    | Lenguaje principal del proyecto                  |
-| **CodeIgniter 4** | Framework de desarrollo web                      |
-| **MySQL**         | Sistema de gestión de base de datos              |
-| **HTML5**         | Estructura de las páginas                        |
-| **CSS3**          | Estilos y diseño                                 |
-| **JavaScript**    | Interactividad del sistema                       |
-| **Bootstrap**     | Diseño responsive e interfaz                     |
-| **XAMPP**         | Entorno de desarrollo local                      |
-| **phpMyAdmin**    | Administración e importación de la base de datos |
-| **Composer**      | Gestión de dependencias de PHP                   |
-
----
-
-## Base de datos
-
-El proyecto incluye el archivo:
-
-```text
-parras_a.sql
-```
-
-Este archivo contiene la estructura y los datos iniciales necesarios para utilizar el sistema.
-
-La base de datos está compuesta principalmente por las siguientes tablas:
-
-```text
-consultas
-    │
-    └── Almacena las consultas realizadas mediante el formulario de contacto
-
-marcas
-    │
-    └── Contiene las marcas de los productos
-
-perfiles
-    │
-    └── Define los perfiles de usuario
-
-users
-    │
-    └── Almacena los usuarios registrados
-
-productos
-    │
-    └── Contiene los productos disponibles para la venta
-
-ventas
-    │
-    └── Registra las compras realizadas
-
-ventas_detalle
-    │
-    └── Contiene el detalle de los productos incluidos en cada venta
-```
-
-### Relaciones principales
-
-* `productos.id_marca` → `marcas.id_marca`
-* `users.id_perfil` → `perfiles.id_perfil`
-* `ventas.id_user` → `users.id_user`
-* `ventas_detalle.id_venta` → `ventas.id_venta`
-* `ventas_detalle.id_producto` → `productos.id_producto`
-
----
-
-## Estructura del proyecto
-
-La estructura principal del proyecto se organiza de acuerdo con CodeIgniter 4:
-
-```text
-proyecto_parras_alan/
-│
-├── app/
-│   ├── Config/
-│   ├── Controllers/
-│   ├── Database/
-│   ├── Filters/
-│   ├── Models/
-│   └── Views/
-│
-├── assets/
-│
-├── Cart/
-│
-├── public/
-│
-├── system/
-│
-├── tests/
-│
-├── writable/
-│
-├── .env
-├── .htaccess
-├── composer.json
-├── index.php
-├── parras_a.sql
-├── phpunit.xml.dist
-├── preload.php
-└── spark
-```
-
-La estructura actual del repositorio incluye, entre otros, `app`, `assets`, `public`, `system`, `tests`, `writable`, `Cart`, `composer.json` y `parras_a.sql`.
-
----
-
-## Requisitos
-
-Para ejecutar el proyecto localmente se necesita:
-
-* **XAMPP**
-* **PHP 8.2.12**
-* **MySQL**
-* **phpMyAdmin**
-* **Composer**
-* Navegador web moderno
-
----
-
-## Instalación
-
-### 1. Clonar el repositorio
-
-Ubicar el proyecto dentro de la carpeta `htdocs` de XAMPP.
+**Con git:**
 
 ```bash
 cd C:\xampp\htdocs
-```
-
-Clonar el repositorio:
-
-```bash
 git clone https://github.com/alanparras/proyecto_parras_alan.git
 ```
 
-También se puede descargar el repositorio directamente desde GitHub.
+**Descargando el ZIP desde GitHub:** al descomprimir, la carpeta se llama `proyecto_parras_alan-main`. **Hay que renombrarla a `proyecto_parras_alan`**, porque la configuración del proyecto depende de ese nombre.
 
----
+### 3. Iniciar los servicios
 
-### 2. Iniciar XAMPP
+Abrir el panel de XAMPP e iniciar **Apache** y **MySQL**.
 
-Abrir el panel de control de XAMPP e iniciar:
+### 4. Crear e importar la base de datos
 
-* **Apache**
-* **MySQL**
+1. Ingresar a `http://localhost/phpmyadmin`.
+2. Crear una base de datos llamada **`parras_a`** (cotejamiento `utf8mb4_general_ci`).
+3. Seleccionarla, ir a **Importar** y elegir el archivo `parras_a.sql` de la raíz del proyecto.
+4. Ejecutar la importación.
 
----
+### 5. Configuración
 
-### 3. Crear la base de datos
+El proyecto ya incluye el archivo `.env` con:
 
-Ingresar a phpMyAdmin desde:
-
-```text
-http://localhost/phpmyadmin
+```ini
+CI_ENVIRONMENT = development
+app.baseURL = 'http://localhost/proyecto_parras_alan/'
 ```
 
-Crear una nueva base de datos llamada:
+La conexión a la base de datos usa los valores por defecto de XAMPP: host `localhost`, base `parras_a`, usuario `root` y **sin contraseña**. Si el MySQL local tiene otra configuración, modificar los datos en `app/Config/Database.php`.
 
-```text
-parras_a
-```
+Si el proyecto se ubica en una carpeta o puerto distinto, ajustar `app.baseURL` en el `.env`.
 
-Luego seleccionar la base de datos y utilizar la opción **Importar**.
+### 6. Dependencias (solo si falta la carpeta `vendor/`)
 
-Seleccionar el archivo:
-
-```text
-parras_a.sql
-```
-
-incluido en la raíz del proyecto.
-
-Finalmente, ejecutar la importación.
-
----
-
-### 4. Instalar dependencias
-
-Desde la carpeta del proyecto ejecutar:
+El repositorio incluye las dependencias en la carpeta `vendor/`. Si por algún motivo no existiera, ejecutar desde la raíz del proyecto:
 
 ```bash
 composer install
 ```
 
-Esto instalará las dependencias necesarias definidas en `composer.json`.
+Esto requiere la extensión `zip` activa (ver paso 1).
 
----
+### 7. Ejecutar
 
-### 5. Ejecutar el proyecto
-
-Con Apache y MySQL activos, acceder desde el navegador a:
+Con Apache y MySQL activos, abrir:
 
 ```text
 http://localhost/proyecto_parras_alan/
 ```
 
-> La ruta puede variar dependiendo de la configuración de Apache y de la ubicación del proyecto dentro de `htdocs`.
+---
+
+## Credenciales de prueba
+
+| Perfil | Usuario | Contraseña |
+| ------ | ------- | ---------- |
+| **Administrador** | `admin` | `admin` |
+| **Cliente** | `prueba` | `12345` |
+
+> Son cuentas de prueba creadas únicamente para evaluar el sistema. Las contraseñas se almacenan encriptadas en la base de datos.
 
 ---
 
-## Perfiles de usuario
+## Descripción
 
-El sistema contempla dos perfiles principales:
+Prime Shoes contempla tres tipos de interacción:
 
-| Perfil            | Descripción                                                        |
-| ----------------- | ------------------------------------------------------------------ |
-| **Administrador** | Tiene acceso a las funcionalidades de administración del sistema.  |
-| **Cliente**       | Puede consultar productos, utilizar el carrito y realizar compras. |
-
-Los visitantes que no hayan iniciado sesión pueden consultar el catálogo y utilizar las funcionalidades disponibles para usuarios no autenticados.
+* **Visitante:** navega por el sitio, consulta productos, usa el carrito y envía consultas.
+* **Cliente:** además puede iniciar sesión, comprar, ver su historial de compras y descargar sus facturas.
+* **Administrador:** gestiona usuarios, productos, marcas, ventas y consultas.
 
 ---
 
-## Administración
+## Funcionalidades
 
-El administrador puede gestionar:
+### Catálogo y productos
 
-* Usuarios
-* Productos
-* Marcas
-* Consultas
-* Ventas
+* Catálogo visible sin necesidad de iniciar sesión.
+* Búsqueda de productos por nombre y paginación (9 productos por página).
+* Detalle de cada producto: nombre, descripción, precio, marca y stock.
+* Los productos **sin stock** se muestran al final del catálogo con un aviso "Sin stock". Su detalle sigue siendo visible, pero no se pueden agregar al carrito ni comprar.
 
-Además, puede activar o desactivar usuarios y productos según corresponda.
+### Carrito y compras
+
+* Agregar productos, modificar cantidades (limitadas por el stock), eliminar productos y vaciar el carrito.
+* "Comprar ahora" desde el detalle del producto.
+* Al confirmar la compra se registra la venta y su detalle, y se descuenta el stock.
+* Pantalla de agradecimiento con acceso a la factura.
+
+### Facturas
+
+* Comprobante de compra informal, sin validez fiscal, generado a partir de los datos de la venta.
+* Visualización en pantalla y **descarga en PDF** (Dompdf).
+* Accesible desde la pantalla de agradecimiento y desde **Mis Compras**.
+* Cada cliente solo puede ver sus propias facturas; el administrador puede ver las de cualquier venta.
+
+### Mis Compras (cliente)
+
+* Historial de compras del usuario con fecha, productos, cantidades, precios y total.
+
+### Panel de administración
+
+* **Usuarios:** alta, edición y activación/desactivación de cuentas.
+* **Productos:** alta (con imagen), edición y activación/desactivación.
+* **Marcas:** alta, edición y activación/desactivación.
+* **Ventas:** listado de ventas, detalle de cada una y acceso a su factura.
+* **Consultas:** listado de los mensajes recibidos, indicando si fueron enviados por un cliente o por un invitado.
+
+### Seguridad y reglas de negocio
+
+* Contraseñas almacenadas con hash (`password_hash`).
+* Control de acceso por perfil mediante filtros: un cliente no puede acceder a ninguna ruta de administración.
+* Validación en el servidor de todos los formularios.
+* Precio mayor a 0 y stock no negativo.
+* DNI, usuario y email únicos.
+* Siempre debe quedar al menos un administrador activo en el sistema.
+* Baja lógica (no se eliminan registros, se desactivan) para conservar la integridad de las ventas históricas.
+* Protección CSRF en los formularios.
+
+### Vistas informativas
+
+Inicio, Quiénes somos, Comercialización, Contacto y Términos y usos.
 
 ---
 
-## Datos de prueba
+## Rutas principales
 
-La base de datos incluida en `parras_a.sql` contiene datos iniciales para poder probar el funcionamiento del sistema.
+| Acceso | Rutas |
+| ------ | ----- |
+| **Público** | `/`, `about_us`, `catalogue`, `details/{id}`, `commercialization`, `contact`, `termsAndUses`, `login`, `register`, `carrito` |
+| **Usuario logueado** | `buy`, `thanks/{id}`, `myPurchases`, `invoice/{id}`, `invoice/{id}/download` |
+| **Solo administrador** | `crudUsers`, `crudProductos`, `crudMarcas`, `crudVentas`, `crudVentas/detalle/{id}`, `crudConsultas` |
 
-Entre ellos se encuentran:
+---
 
-* Usuarios de prueba.
-* Perfiles de usuario.
-* Marcas.
-* Productos.
-* Consultas.
-* Ventas.
-* Detalles de ventas.
+## Tecnologías utilizadas
 
-> Las credenciales de acceso deben obtenerse de los datos incluidos en la base de datos o configurarse desde el propio sistema.
+| Tecnología | Uso |
+| ---------- | --- |
+| **PHP 8.2** | Lenguaje principal |
+| **CodeIgniter 4** | Framework (arquitectura MVC) |
+| **MySQL / MariaDB** | Base de datos |
+| **Dompdf** | Generación de facturas en PDF |
+| **HTML5 / CSS3** | Estructura y estilos |
+| **JavaScript** | Interactividad (por ejemplo, actualización de cantidades en el carrito) |
+| **Bootstrap** | Diseño responsive e interfaz |
+| **XAMPP** | Entorno de desarrollo local |
+| **phpMyAdmin** | Administración e importación de la base de datos |
+| **Composer** | Gestión de dependencias |
+
+---
+
+## Base de datos
+
+El archivo `parras_a.sql` contiene la estructura y los datos iniciales. Tablas:
+
+| Tabla | Contenido |
+| ----- | --------- |
+| `perfiles` | Perfiles de usuario (Admin, Cliente) |
+| `users` | Usuarios registrados |
+| `marcas` | Marcas de los productos |
+| `productos` | Productos a la venta |
+| `ventas` | Compras realizadas |
+| `ventas_detalle` | Productos incluidos en cada venta |
+| `consultas` | Mensajes del formulario de contacto |
+
+### Relaciones
+
+* `users.id_perfil` → `perfiles.id_perfil`
+* `productos.id_marca` → `marcas.id_marca`
+* `ventas.id_user` → `users.id_user`
+* `ventas_detalle.id_venta` → `ventas.id_venta`
+* `ventas_detalle.id_producto` → `productos.id_producto`
+* `consultas.id_user` → `users.id_user` (opcional: queda vacío si la consulta la envió un invitado)
+
+---
+
+## Estructura del proyecto
+
+```text
+proyecto_parras_alan/
+├── app/
+│   ├── Config/        Configuración, rutas (Routes.php) y filtros (Filters.php)
+│   ├── Controllers/   Controladores
+│   ├── Filters/       Auth y AdminAuth (control de acceso)
+│   ├── Models/        Modelos
+│   └── Views/         Vistas (plantilla, front, partials)
+├── assets/            CSS, JavaScript e imágenes
+├── Cart/              Librería de carrito de CodeIgniter
+├── system/            Núcleo del framework
+├── vendor/            Dependencias de Composer (incluye Dompdf)
+├── writable/          Logs, caché y sesiones
+├── .env               Configuración del entorno
+├── .htaccess          Reescritura de URLs
+├── composer.json
+├── index.php
+├── parras_a.sql       Base de datos
+└── spark
+```
+
+---
+
+## Solución de problemas
+
+**`Class "Locale" not found`**
+Falta la extensión `intl`. En `php.ini` cambiar `;extension=intl` por `extension=intl`, guardar y reiniciar Apache.
+
+**Composer: "The zip extension and unzip/7z commands are both missing"**
+En `php.ini` activar `extension=zip`, guardar, abrir una terminal nueva y volver a ejecutar `composer install`. Usar el `php.ini` que indica el propio mensaje de error.
+
+**Las páginas cargan sin estilos o las rutas devuelven 404**
+Verificar que la carpeta se llame exactamente `proyecto_parras_alan`, que `app.baseURL` en el `.env` coincida con la URL con la que se accede, y que Apache tenga activo el módulo `mod_rewrite`.
+
+**Error de conexión a la base de datos**
+Verificar que MySQL esté iniciado en XAMPP, que la base se llame `parras_a` y que los datos de `app/Config/Database.php` coincidan con la configuración local.
+
+**La factura en PDF no se descarga**
+Verificar que exista la carpeta `vendor/dompdf`. Si no está, ejecutar `composer install`.
+
+**Pantalla en blanco o "Whoops!"**
+Con `CI_ENVIRONMENT = development` en el `.env` se muestra el detalle del error. Revisar también los archivos de `writable/logs`.
+
+**Modo producción**
+Para ocultar los errores detallados y la barra de depuración, cambiar `CI_ENVIRONMENT` a `production` en el `.env`.
 
 ---
 
 ## Documentación
 
-La documentación funcional del proyecto se encuentra definida en la **Especificación de Requisitos de Software (ERS)** de Prime Shoes.
-
-El documento establece el alcance del sistema, los perfiles de usuario, las funcionalidades y los requisitos funcionales y no funcionales del proyecto.
+La **Especificación de Requisitos de Software (ERS)** y el **modelado de la base de datos** se entregan por separado.
 
 ---
 
 ## Autor
 
 **Alan Emanuel Parras**
-
-Desarrollador Front-end y Back-end.
-
-### Tecnologías de interés
-
-* PHP
-* CodeIgniter
-* MySQL
-* HTML
-* CSS
-* JavaScript
-* Bootstrap
-
----
 
 ## Repositorio
 
