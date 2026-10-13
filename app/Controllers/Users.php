@@ -18,7 +18,7 @@ class Users extends BaseController
         $rules = [ // validaciones del formulario
             'nombre' => 'required|max_length[50]',
             'apellido' => 'required|max_length[50]',
-            'dni' => 'required|max_length[8]|is_unique[users.dni]',
+            'dni' => 'required|min_length[8]|max_length[8]|is_unique[users.dni]',
             'user' => 'required|max_length[30]|is_unique[users.user]', // fijate en la base de datos este registro y tambien los maximos de caracteres de los registros
             'email' => 'required|max_length[100]|valid_email|is_unique[users.email]',
             'pass' => 'required|max_length[50]|min_length[5]',

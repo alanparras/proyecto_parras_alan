@@ -39,7 +39,7 @@ class CrudUsers extends BaseController
         $rules = [
             'nombre'   => 'required|max_length[50]',
             'apellido' => 'required|max_length[50]',
-            'dni'      => 'required|numeric|min_length[7]|max_length[8]|is_unique[users.dni]',
+            'dni'      => 'required|numeric|min_length[8]|max_length[8]|is_unique[users.dni]',
             'user'     => 'required|max_length[30]|is_unique[users.user]',
             'email'    => 'required|max_length[100]|valid_email|is_unique[users.email]',
             'perfil'   => 'required|is_not_unique[perfiles.id_perfil]',
@@ -105,7 +105,7 @@ class CrudUsers extends BaseController
         $rules = [
             'nombre'   => 'required|max_length[50]',
             'apellido' => 'required|max_length[50]',
-            'dni'      => "required|numeric|min_length[7]|max_length[8]|is_unique[users.dni,id_user,{$id}]",
+            'dni'      => "required|numeric|min_length[8]|max_length[8]|is_unique[users.dni,id_user,{$id}]",
             'user'     => "required|max_length[30]|is_unique[users.user,id_user,{$id}]",
             'email'    => "required|max_length[100]|valid_email|is_unique[users.email,id_user,{$id}]",
             'perfil'   => 'required|is_not_unique[perfiles.id_perfil]',
