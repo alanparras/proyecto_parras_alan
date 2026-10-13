@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-10-2026 a las 19:19:27
+-- Tiempo de generación: 13-10-2026 a las 20:24:40
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -223,7 +223,8 @@ INSERT INTO `ventas_detalle` (`id_detalle`, `id_venta`, `id_producto`, `qty`, `p
 -- Indices de la tabla `consultas`
 --
 ALTER TABLE `consultas`
-  ADD PRIMARY KEY (`id_consulta`);
+  ADD PRIMARY KEY (`id_consulta`),
+  ADD KEY `consultas_users` (`id_user`);
 
 --
 -- Indices de la tabla `marcas`
@@ -249,6 +250,10 @@ ALTER TABLE `productos`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id_user`),
+  ADD UNIQUE KEY `uq_users_dni` (`dni`),
+  ADD UNIQUE KEY `uq_users_user` (`user`),
+  ADD UNIQUE KEY `uq_users_email` (`email`),
+  ADD UNIQUE KEY `dni` (`dni`),
   ADD KEY `id_perfil_2` (`id_perfil`),
   ADD KEY `id_perfil` (`id_perfil`) USING BTREE;
 
@@ -299,7 +304,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT de la tabla `ventas`
@@ -316,6 +321,12 @@ ALTER TABLE `ventas_detalle`
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `consultas`
+--
+ALTER TABLE `consultas`
+  ADD CONSTRAINT `consultas_users` FOREIGN KEY (`id_user`) REFERENCES `users` (`id_user`) ON DELETE SET NULL;
 
 --
 -- Filtros para la tabla `productos`

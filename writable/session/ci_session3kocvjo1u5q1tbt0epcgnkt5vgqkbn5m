@@ -1,0 +1,9 @@
+__ci_last_regenerate|i:1791914435;_ci_previous_url|s:46:"http://localhost/proyecto_parras_alan/register";_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:8:{s:14:"csrf_test_name";s:32:"eee4f82579d054571f78c6436a57d810";s:6:"nombre";s:10:"pruebaDNI2";s:8:"apellido";s:10:"pruebaDNI2";s:3:"dni";s:8:"11111111";s:4:"user";s:10:"pruebaDNI2";s:5:"email";s:20:"pruebaDNI2@GMAIL.COM";s:4:"pass";s:5:"12345";s:6:"repass";s:5:"12345";}}__ci_vars|a:3:{s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";s:6:"errors";s:3:"old";}_ci_validation_errors|a:1:{s:3:"dni";s:43:"El campo dni debe contener un valor único.";}errors|s:252:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>El campo dni debe contener un valor único.</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";
