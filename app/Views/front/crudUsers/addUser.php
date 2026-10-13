@@ -59,7 +59,7 @@ echo $this->section('contenido'); ?>
                 </div>
             </div>
             <div class="input-container input-container--botones">
-                <a href="crudUsers.php" class="botonLogin botonLogin--volver">Regresar</a>
+                <a href="<?= base_url('crudUsers') ?>" class="botonLogin botonLogin--volver">Regresar</a>
                 <button type="submit" class="botonLogin">Agregar</button>
             </div>
         </form>
