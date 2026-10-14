@@ -25,7 +25,14 @@ echo $this->section('contenido'); ?>
         <?php else : ?>
             <div class="boxContenidoCarrito">
                 <div class="divBoxProductos">
-                <a href="<?= base_url('destroy') ?>" class="botonCompra botonCompra-vaciar">Vaciar carrito</a>
+                    <?php if (!empty($avisos)) : ?>
+                        <div class="alert alert-warning" role="alert">
+                            <?php foreach ($avisos as $aviso) : ?>
+                                <p><?= esc($aviso) ?></p>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
+                    <a href="<?= base_url('destroy') ?>" class="botonCompra botonCompra-vaciar">Vaciar carrito</a>
                     <?php foreach ($carrito->contents() as $productoCarrito) :
 
                         $imagen = "assets/img/productos/" . $productoCarrito['id'] . "/principal.jpg";

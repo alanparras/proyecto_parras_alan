@@ -14,22 +14,52 @@ class Cart extends BaseController
         $cart->contents();
     }
 
+    private function sincronizarCarrito(): array
+    {
+        $cart = \Config\Services::Cart();
+        $productosModel = new ProductsModel();
+        $avisos = [];
+
+        foreach ($cart->contents() as $item) {
+            $producto = $productosModel->find($item['id']);
+
+            if ($producto === null || !$producto['activo'] || $producto['stock'] <= 0) {
+                $cart->remove($item['rowid']);
+                $avisos[] = '"' . $item['name'] . '" ya no está disponible y se quitó del carrito.';
+                continue;
+            }
+
+            if ($item['qty'] > $producto['stock']) {
+                $cart->update(['rowid' => $item['rowid'], 'qty' => $producto['stock']]);
+                $avisos[] = 'La cantidad de "' . $item['name'] . '" se ajustó a ' . $producto['stock'] . ' (stock disponible).';
+            }
+        }
+
+        return $avisos;
+    }
+
     public function index()
     {
-        // Evita que el navegador muestre una versión cacheada del carrito
         $this->response->setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
         $this->response->setHeader('Pragma', 'no-cache');
 
-        $data = ['titulo' => 'Prime Shoes | Carrito'];
+        $avisos = $this->sincronizarCarrito();
 
         $cart = \Config\Services::Cart();
         $productosModel = new ProductsModel();
 
-        $data['productos'] = $productosModel;
-        $data['carrito'] = $cart;
+        $data = [
+            'titulo'    => 'Prime Shoes | Carrito',
+            'productos' => $productosModel,
+            'carrito'   => $cart,
+            // avisos de esta carga + los que vengan de un intento de compra fallido
+            'avisos'    => array_merge($avisos, session()->getFlashdata('avisosCarrito') ?? []),
+        ];
 
         return view('front/carrito', $data);
     }
+    // Ajusta el carrito al stock actual y devuelve los avisos para el usuario
+    
 
     //Agregar al carrito
     public function add($id)
@@ -159,43 +189,67 @@ class Cart extends BaseController
     public function buy()
     {
         $cart = \Config\Services::Cart();
-        $productos = $cart->contents();
 
-        // Si no hay nada en el carrito, no se genera ninguna venta
-        if (empty($productos)) {
+        if (empty($cart->contents())) {
             session()->setFlashdata('carritoVacio', 'Tu carrito está vacío.');
             return redirect()->to('carrito');
         }
 
+        // Revalidar contra el stock actual antes de registrar nada
+        $avisos = $this->sincronizarCarrito();
+
+        if (!empty($avisos)) {
+            session()->setFlashdata('avisosCarrito', $avisos);
+            return redirect()->to('carrito');
+        }
+
+        $productos = $cart->contents();
+
         $ventaModel = new VentaModel();
         $ventaDetalleModel = new VentaDetalleModel();
-        $productoModel = new ProductsModel();
+        $db = \Config\Database::connect();
 
-        $idVenta = $ventaModel->insert([
-            'id_user' => session()->get('userId'),
-            'total_venta' => $cart->total(),
-        ]);
+        $db->transBegin();
 
-        foreach ($productos as $producto) {
-            $ventaDetalleModel->insert([
-                'id_venta' => $idVenta,
-                'id_producto' => $producto['id'],
-                'qty' => $producto['qty'],
-                'precio' => $producto['price']
+        try {
+            $idVenta = $ventaModel->insert([
+                'id_user'     => session()->get('userId'),
+                'total_venta' => $cart->total(),
             ]);
 
-            $stockProducto = $productoModel->find($producto['id']);
+            foreach ($productos as $producto) {
+                $ventaDetalleModel->insert([
+                    'id_venta'    => $idVenta,
+                    'id_producto' => $producto['id'],
+                    'qty'         => $producto['qty'],
+                    'precio'      => $producto['price'],
+                ]);
 
-            $productoModel->update(
-                $producto['id'],
-                ['stock' => $stockProducto['stock'] - $producto['qty']]
-            );
+                // Descuento atómico: solo se aplica si todavía hay stock suficiente
+                $db->table('productos')
+                ->set('stock', 'stock - ' . (int) $producto['qty'], false)
+                ->where('id_producto', $producto['id'])
+                ->where('stock >=', (int) $producto['qty'])
+                ->update();
+
+                if ($db->affectedRows() < 1) {
+                    throw new \RuntimeException('Stock insuficiente para el producto ' . $producto['id']);
+                }
+            }
+
+            $db->transCommit();
+        } catch (\Throwable $e) {
+            $db->transRollback();
+            log_message('error', 'Error al registrar la compra: ' . $e->getMessage());
+            session()->setFlashdata('avisosCarrito', ['No se pudo completar la compra porque el stock cambió. Revisá tu carrito e intentá nuevamente.']);
+            return redirect()->to('carrito');
         }
 
         $cart->destroy();
 
         return redirect()->to('thanks/' . $idVenta);
     }
+    
     public function destroy()
     {
         $cart = \Config\Services::Cart();

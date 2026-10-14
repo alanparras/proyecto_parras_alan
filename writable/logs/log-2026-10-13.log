@@ -281,3 +281,5 @@ INFO - 2026-10-13 19:08:28 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2026-10-13 19:08:28 --> Cart Class Initialized
 INFO - 2026-10-13 19:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2026-10-13 19:08:29 --> Cart Class Initialized
+INFO - 2026-10-13 19:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-10-13 19:09:17 --> Cart Class Initialized
